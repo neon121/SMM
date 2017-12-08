@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>---АВТОРИЗАЦИЯ---</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css"/>
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="js/md5.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+    </head>
+    <body>
+        <div id="auth">
+            <table>
+                <tr><td>Логин<td><input type="text" name="user"/>
+                <tr><td>Пароль<td><input type="password" name="password"/>
+                <tr><td colspan="2"><input type="button" id="tryLogin" value="Отправить"/>
+                <tr><td colspan="2" class="status">
+            </table>
+        </div>
+        <div id="listing">
+            <div class="header">
+                Пользователь <span class="username"></span>
+                <a class="logout" title="Выйти из аккаунта"></a>
+                <div class="dontClose">НЕ ЗАКРЫВАЙТЕ ОКНО</div>
+                <div class="options">
+                    <a class="unauth" title="Выйти из соцсетей"></a>
+                </div>
+            </div>
+            <table>
+                <tr class="etalon" title="Авторизировать аккаунты">
+                    <td class="vk">
+                    <td class="fb">
+                    <td class="inst">
+            </table> <table></table>
+            <pre></pre>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+{
+    "manifest_version": 2,
+    "name": "Авторизация",
+    "description": "Автоавторизация",
+    "version": "1.0.5",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "options_page": "index.html",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "icons": {
+        "16": "/ico/key-16.png",
+        "48": "/ico/key-48.png",
+        "128": "/ico/key-128.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*",
+                "http://*/*"
+            ],
+            "js": ["js/jquery-3.1.1.min.js", "content.js"]
+        }
+    ],
+    "permissions": [
+        "https://*/*",
+        "http://*/*",
+        "tabs",
+        "storage",
+        "background",
+        "proxy",
+        "webRequest", 
+        "webRequestBlocking"
+    ]
+}
